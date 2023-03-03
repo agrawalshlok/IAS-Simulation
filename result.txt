@@ -1,0 +1,309 @@
+Note: All the following results can be obtained in a single run of the program.
+
+1. 
+    Press 1 for addition.(prints values in registers)
+    Press 2 for subtraction.(prints values in registers)
+    Press 3 for multiplication.(prints values in registers)
+    Press 4 for left shift.(prints values in registers)
+    Press 5 for first 10 numbers of a given Arithmetic Progression.
+    Press 6 for first 10 numbers of a given Geometric Progression.
+    Press 7 for the first 10 numbers of Fibonacci Series.
+    Press 8 for the Factorial of first 10 natural numbers.
+    Press 9 for the first 10 powers of 2 (from 1).
+    Press 0 to exit.
+    1
+
+    Enter two numbers to add.
+    Enter two numbers to add.
+    7
+    -4
+    After LOAD:
+    PC = 0
+    MAR = 100
+    MBR = 0000000000000000000000000000000000000111
+    IBR = 00000101000001100101
+    IR = 00000001
+    AC = 7
+
+    After ADD:
+    PC = 0
+    MAR = 101
+    MBR = 1111111111111111111111111111111111111100
+    IBR = 00000101000001100101
+    IR = 00000101
+    AC = 3
+
+    After STOR:
+    PC = 1
+    MAR = 0
+    MBR = 0000000000000000000000000000000000000011
+    IBR = 00001101000000000000
+    IR = 00001101
+    AC = 3
+
+    After JUMP:
+    PC = 0
+    MAR = 0
+    MBR = 0000000000000000000000000000000000000011
+    IBR = 00001101000000000000
+    IR = 00001101
+    AC = 3
+
+    Sum = 3
+
+2.
+    Press 1 for addition.(prints values in registers)
+    Press 2 for subtraction.(prints values in registers)
+    Press 3 for multiplication.(prints values in registers)
+    Press 4 for left shift.(prints values in registers)
+    Press 5 for first 10 numbers of a given Arithmetic Progression.
+    Press 6 for first 10 numbers of a given Geometric Progression.
+    Press 7 for the first 10 numbers of Fibonacci Series.
+    Press 8 for the Factorial of first 10 natural numbers.
+    Press 9 for the first 10 powers of 2 (from 1).
+    Press 0 to exit.
+    2
+
+    Enter two numbers to subtract.
+    9
+    7
+    After LOAD:
+    PC = 0
+    MAR = 100
+    MBR = 0000000000000000000000000000000000001001
+    IBR = 00000110000001100101
+    IR = 00000001
+    AC = 9
+
+    After SUB:
+    PC = 0
+    MAR = 101
+    MBR = 0000000000000000000000000000000000000111
+    IBR = 00000110000001100101
+    IR = 00000110
+    AC = 2
+
+    After STOR:
+    PC = 1
+    MAR = 0
+    MBR = 0000000000000000000000000000000000000010
+    IBR = 00001101000000000000
+    IR = 00001101
+    AC = 2
+
+    After JUMP:
+    PC = 0
+    MAR = 0
+    MBR = 0000000000000000000000000000000000000010
+    IBR = 00001101000000000000
+    IR = 00001101
+    AC = 2
+
+    subtraction = 2
+
+3. 
+    Press 1 for addition.(prints values in registers)
+    Press 2 for subtraction.(prints values in registers)
+    Press 3 for multiplication.(prints values in registers)
+    Press 4 for left shift.(prints values in registers)
+    Press 5 for first 10 numbers of a given Arithmetic Progression.
+    Press 6 for first 10 numbers of a given Geometric Progression.
+    Press 7 for the first 10 numbers of Fibonacci Series.
+    Press 8 for the Factorial of first 10 natural numbers.
+    Press 9 for the first 10 powers of 2 (from 1).
+    Press 0 to exit.
+    3
+
+    Enter two numbers to multiply.
+    4
+    -9
+    After LOAD MQ MX:
+    MQ = 0000000000000000000000000000000000000100
+    PC = 0
+    MAR = 100
+    MBR = 0000000000000000000000000000000000000100
+    IBR = 00001011000001100101
+    IR = 00001001
+    AC = 2
+
+    After MUL:
+    MQ = 1111111111111111111111111111111111011100
+    AC in binary = 1111111111111111111111111111111111111111
+    PC = 0
+    MAR = 101
+    MBR = 1111111111111111111111111111111111110111
+    IBR = 00001011000001100101
+    IR = 00001011
+    AC = -1
+
+    After LOAD MQ:
+    MQ = 1111111111111111111111111111111111011100
+    PC = 1
+    MAR = 1
+    MBR = 0000101000000000000000100001000011001000
+    IBR = 00100001000011001000
+    IR = 00001011
+    AC = -36
+
+    After STOR:
+    PC = 1
+    MAR = 200
+    MBR = 1111111111111111111111111111111111011100
+    IBR = 00100001000011001000
+    IR = 00100001
+    AC = -36
+
+    After JUMP:
+    PC = 0
+    MAR = 0
+    MBR = 0000000000000000000000001101000000000000
+    IBR = 00001101000000000000
+    IR = 00001101
+    AC = -36
+
+    product = -36
+
+4. 
+    Press 1 for addition.(prints values in registers)
+    Press 2 for subtraction.(prints values in registers)
+    Press 3 for multiplication.(prints values in registers)
+    Press 4 for left shift.(prints values in registers)
+    Press 5 for first 10 numbers of a given Arithmetic Progression.
+    Press 6 for first 10 numbers of a given Geometric Progression.
+    Press 7 for the first 10 numbers of Fibonacci Series.
+    Press 8 for the Factorial of first 10 natural numbers.
+    Press 9 for the first 10 powers of 2 (from 1).
+    Press 0 to exit.
+    4
+
+    Enter a number to left shift by 1.
+    9
+    After LOAD:
+    PC = 0
+    MAR = 100
+    MBR = 0000000000000000000000000000000000001001
+    IBR = 00010100000000000000
+    IR = 00000001
+    AC = 9
+
+    After LSH:
+    PC = 0
+    MAR = 100
+    IBR = 00010100000000000000
+    MBR = 0000000000000000000000000000000000001001
+    IR = 00000001
+    AC = 18
+
+    After STOR:
+    PC = 1
+    MAR = 0
+    MBR = 0000000000000000000000000000000000010010
+    IBR = 00001101000000000000
+    IR = 00001101
+    AC = 18
+
+    After JUMP:
+    PC = 0
+    MAR = 0
+    MBR = 0000000000000000000000000000000000010010
+    IBR = 00001101000000000000
+    IR = 00001101
+    AC = 18
+
+    left shift = 18
+
+5. 
+    Press 1 for addition.(prints values in registers)
+    Press 2 for subtraction.(prints values in registers)
+    Press 3 for multiplication.(prints values in registers)
+    Press 4 for left shift.(prints values in registers)
+    Press 5 for first 10 numbers of a given Arithmetic Progression.
+    Press 6 for first 10 numbers of a given Geometric Progression.
+    Press 7 for the first 10 numbers of Fibonacci Series.
+    Press 8 for the Factorial of first 10 natural numbers.
+    Press 9 for the first 10 powers of 2 (from 1).
+    Press 0 to exit.
+    5
+
+    Enter the first number of AP: 6
+    Enter the common difference of AP: -4
+
+    6 2 -2 -6 -10 -14 -18 -22 -26 -30 
+
+6.
+    Press 1 for addition.(prints values in registers)
+    Press 2 for subtraction.(prints values in registers)
+    Press 3 for multiplication.(prints values in registers)
+    Press 4 for left shift.(prints values in registers)
+    Press 5 for first 10 numbers of a given Arithmetic Progression.
+    Press 6 for first 10 numbers of a given Geometric Progression.
+    Press 7 for the first 10 numbers of Fibonacci Series.
+    Press 8 for the Factorial of first 10 natural numbers.
+    Press 9 for the first 10 powers of 2 (from 1).
+    Press 0 to exit.
+    6
+
+    Enter the first number of GP: 7
+    Enter the common ratio of GP: 3
+
+    7 21 63 189 567 1701 5103 15309 45927 137781 
+
+7.
+    Press 1 for addition.(prints values in registers)
+    Press 2 for subtraction.(prints values in registers)
+    Press 3 for multiplication.(prints values in registers)
+    Press 4 for left shift.(prints values in registers)
+    Press 5 for first 10 numbers of a given Arithmetic Progression.
+    Press 6 for first 10 numbers of a given Geometric Progression.
+    Press 7 for the first 10 numbers of Fibonacci Series.
+    Press 8 for the Factorial of first 10 natural numbers.
+    Press 9 for the first 10 powers of 2 (from 1).
+    Press 0 to exit.
+    7
+
+    0 1 1 2 3 5 8 13 21 34 
+
+8.
+    Press 1 for addition.(prints values in registers)
+    Press 2 for subtraction.(prints values in registers)
+    Press 3 for multiplication.(prints values in registers)
+    Press 4 for left shift.(prints values in registers)
+    Press 5 for first 10 numbers of a given Arithmetic Progression.
+    Press 6 for first 10 numbers of a given Geometric Progression.
+    Press 7 for the first 10 numbers of Fibonacci Series.
+    Press 8 for the Factorial of first 10 natural numbers.
+    Press 9 for the first 10 powers of 2 (from 1).
+    Press 0 to exit.
+    8
+
+    1 2 6 24 120 720 5040 40320 362880 3628800 
+
+9.
+    Press 1 for addition.(prints values in registers)
+    Press 2 for subtraction.(prints values in registers)
+    Press 3 for multiplication.(prints values in registers)
+    Press 4 for left shift.(prints values in registers)
+    Press 5 for first 10 numbers of a given Arithmetic Progression.
+    Press 6 for first 10 numbers of a given Geometric Progression.
+    Press 7 for the first 10 numbers of Fibonacci Series.
+    Press 8 for the Factorial of first 10 natural numbers.
+    Press 9 for the first 10 powers of 2 (from 1).
+    Press 0 to exit.
+    9
+
+    1 2 4 8 16 32 64 128 256 512 
+
+10.
+    Press 1 for addition.(prints values in registers)
+    Press 2 for subtraction.(prints values in registers)
+    Press 3 for multiplication.(prints values in registers)
+    Press 4 for left shift.(prints values in registers)
+    Press 5 for first 10 numbers of a given Arithmetic Progression.
+    Press 6 for first 10 numbers of a given Geometric Progression.
+    Press 7 for the first 10 numbers of Fibonacci Series.
+    Press 8 for the Factorial of first 10 natural numbers.
+    Press 9 for the first 10 powers of 2 (from 1).
+    Press 0 to exit.
+    0
+
+---EXIT---
